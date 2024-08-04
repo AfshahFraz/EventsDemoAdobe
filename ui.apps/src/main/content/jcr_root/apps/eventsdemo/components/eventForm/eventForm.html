@@ -1,0 +1,25 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+     <sly data-sly-call="${clientlib.all @ categories='eventsdemo.components.form'}"/>
+</sly>
+
+<form action="/bin/eventForm/form" method="POST" data-sling-ajax="true" class="form-container">
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="text" id="id" name="id" required>
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <button type="submit">Submit</button>
+  </div>
+</form>
